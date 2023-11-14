@@ -24,3 +24,14 @@ body {
 section {
   padding: 50px 0;
 }
+
+.sticky__header {
+  width: 100%;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 3px 3px -8px 3px #ddd;
+  z-index: 99;
+}

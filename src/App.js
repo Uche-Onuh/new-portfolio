@@ -26,9 +26,7 @@ function App() {
         <Portfolio />
         <Contact />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 }
