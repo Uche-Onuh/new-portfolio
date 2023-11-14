@@ -7,10 +7,14 @@ import luxe from "./luxewebsite.png";
 import mel from "./mel.png";
 import monie from "./moniemove.png";
 import mytube from "./Mytube.png";
+import mennsom from "./mennsom.png";
 import oge from "./oge.png";
 import osi from "./osi.png";
-import heroImg from './heroImg.png';
-import hero2 from "./heroimg.jpg"
+import hero2 from "./heroimg.png";
+import frontend from "./web.png";
+import react from "./reactjs.png";
+import creator from "./creator.png";
+import mobile from "./mobile.png";
 
 export {
   logo,
@@ -21,9 +25,13 @@ export {
   luxe,
   mel,
   monie,
+  mennsom,
   mytube,
   oge,
   osi,
-  heroImg,
   hero2,
+  frontend,
+  react,
+  creator,
+  mobile,
 };

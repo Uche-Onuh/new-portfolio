@@ -2,7 +2,14 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "./App.css";
 
-import { Navbar, Footer, Hero } from "./components";
+import {
+  Navbar,
+  Footer,
+  Hero,
+  Services,
+  Portfolio,
+  Contact,
+} from "./components";
 
 function App() {
   useEffect(() => {
@@ -15,6 +22,9 @@ function App() {
       </nav>
       <main>
         <Hero />
+        <Services />
+        <Portfolio />
+        <Contact />
       </main>
       <footer>
         <Footer />
