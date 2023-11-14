@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "./App.css";
 
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, Hero } from "./components";
 
 function App() {
   useEffect(() => {
@@ -13,9 +13,9 @@ function App() {
       <nav>
         <Navbar />
       </nav>
-        <main>
-          
-        </main>
+      <main>
+        <Hero />
+      </main>
       <footer>
         <Footer />
       </footer>

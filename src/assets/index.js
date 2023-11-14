@@ -9,5 +9,21 @@ import monie from "./moniemove.png";
 import mytube from "./Mytube.png";
 import oge from "./oge.png";
 import osi from "./osi.png";
+import heroImg from './heroImg.png';
+import hero2 from "./heroimg.jpg"
 
-export { logo, admin, bank, gpt3, great, luxe, mel, monie, mytube, oge, osi };
+export {
+  logo,
+  admin,
+  bank,
+  gpt3,
+  great,
+  luxe,
+  mel,
+  monie,
+  mytube,
+  oge,
+  osi,
+  heroImg,
+  hero2,
+};
