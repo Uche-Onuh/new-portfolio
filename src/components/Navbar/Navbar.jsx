@@ -3,6 +3,7 @@ import { logo } from "../../assets";
 
 const Navbar = () => {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
 
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
@@ -33,6 +34,8 @@ const Navbar = () => {
     });
   };
 
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
   return (
     <header
       ref={headerRef}
@@ -48,7 +51,7 @@ const Navbar = () => {
           </div>
           {/* ===============logo end ============== */}
           {/* =============menu start=============== */}
-          <div className="menu">
+          <div className="menu" ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center gap-10">
               <li>
                 <a
@@ -99,10 +102,13 @@ const Navbar = () => {
             >
               <i className="ri-send-plane-line"></i>Let's Talk
             </button>
+            <span
+              onClick={toggleMenu}
+              className="text-2xl text-smallTextColor md:hidden cursor-pointer"
+            >
+              <i className="ri-menu-line"></i>
+            </span>
           </div>
-          <span className="text-2xl text-smallTextColor md:hidden cursor-pointer">
-            <i className="ri-menu-line"></i>
-          </span>
         </div>
       </div>
     </header>
