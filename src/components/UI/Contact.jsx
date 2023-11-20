@@ -1,6 +1,63 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Uche",
+          from_email: form.email,
+          to_email: "onuhblaze@gmail.com",
+          subject: form.subject,
+          message: form.message,
+        },
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          toast.success(
+            "Thank you. I will get back to you as soon as possible."
+          );
+
+          setForm({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          toast.error("Something went wrong. Please try again.");
+        }
+      );
+  };
+
   return (
     <section id="contact">
       <div className="container">
@@ -23,24 +80,33 @@ const Contact = () => {
             className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center
           bg-indigo-100 px-4 lg:px-8 py-8"
           >
-            <form className="w-full">
+            <form className="w-full" onSubmit={handleSubmit} ref={formRef}>
               <div className="mb-5">
                 <input
+                  name="name"
                   type="text"
+                  value={form.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                 />
               </div>
               <div className="mb-5">
                 <input
+                  name="email"
                   type="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="Enter your email"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                 />
               </div>
               <div className="mb-5">
                 <input
+                  name="subject"
                   type="text"
+                  value={form.subject}
+                  onChange={handleChange}
                   placeholder="Enter your subject"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                 />
@@ -49,6 +115,8 @@ const Contact = () => {
                 <textarea
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                   name="message"
+                  value={form.message}
+                  onChange={handleChange}
                   id="message"
                   rows="3"
                   placeholder="Write your message"
@@ -59,7 +127,7 @@ const Contact = () => {
                 className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor
               text-white hover:bg-headingColor text-center ease-linear duration-150"
               >
-                Send message
+                {loading ? "Sending..." : "Send message"}
               </button>
             </form>
           </div>

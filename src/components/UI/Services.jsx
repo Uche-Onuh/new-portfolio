@@ -10,10 +10,10 @@ const Services = () => {
             Services I provide
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur amet officiis quo eum, a ipsa delectus impedit. Delectus
-            qui et architecto enim ad, cumque unde, assumenda, omnis dignissimos
-            ex reprehenderit.
+            As a dedicated frontend developer, I strive to offer exceptional
+            solutions tailored to meet your needs. With a commitment to
+            excellence, I deliver results that exceed expectations and
+            contribute to your success.
           </p>
         </div>
 
@@ -46,18 +46,20 @@ const Services = () => {
                           className="text-[15px] text-smallTextColor group-hover:text-white 
                         group-hover:font-[500] leading-7"
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis laborum asperiores adipisci ipsam
-                          distinctio expedita.
+                          As a passionate frontend developer, I specialize in
+                          crafting seamless and visually appealing user
+                          interfaces. My commitment to excellence ensures that
+                          every project I undertake is a testament to innovation
+                          and user-centric design.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div
-                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2
+                    className="rounded-full bg-primaryColor border-white border-4 w-7 h-7 md:w-10 md:h-10 absolute left-1/2
                   transform -translate-x-1/2 -translate-y-0 flex items-center justify-center"
                   >
-                    <figure>
+                    <figure className="">
                       <img src={frontend} alt="" />
                     </figure>
                   </div>
@@ -85,15 +87,18 @@ const Services = () => {
                           className="text-[15px] text-smallTextColor group-hover:text-white 
                         group-hover:font-[500] leading-7"
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis laborum asperiores adipisci ipsam
-                          distinctio expedita.
+                          As a dedicated React JS developer, I bring innovation
+                          and efficiency to web development. My expertise lies
+                          in creating dynamic and responsive user interfaces
+                          that enhance the overall user experience. Let's
+                          collaborate to turn your ideas into interactive and
+                          engaging React applications.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div
-                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2
+                    className="rounded-full bg-primaryColor border-white border-4 w-7 h-7 md:w-10 md:h-10 absolute left-1/2
                   transform -translate-x-1/2 -translate-y-0 flex items-center justify-center"
                   >
                     <figure>
@@ -123,15 +128,18 @@ const Services = () => {
                           className="text-[15px] text-smallTextColor group-hover:text-white 
                         group-hover:font-[500] leading-7"
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis laborum asperiores adipisci ipsam
-                          distinctio expedita.
+                          As a seasoned Web Development Instructor, I am
+                          passionate about sharing knowledge and empowering
+                          aspiring developers. With hands-on experience and a
+                          commitment to fostering a dynamic learning
+                          environment, I guide students in mastering the skills
+                          needed to thrive in the world of web development.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div
-                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2
+                    className="rounded-full bg-primaryColor border-white border-4  w-7 h-7 md:w-10 md:h-10 absolute left-1/2
                   transform -translate-x-1/2 -translate-y-0 flex items-center justify-center"
                   >
                     <figure>
@@ -162,15 +170,18 @@ const Services = () => {
                           className="text-[15px] text-smallTextColor group-hover:text-white 
                         group-hover:font-[500] leading-7"
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis laborum asperiores adipisci ipsam
-                          distinctio expedita.
+                          As an IT Assistant, I am dedicated to providing
+                          efficient technical support and solutions. With a keen
+                          eye for problem-solving and a passion for technology,
+                          I contribute to the seamless operation of IT systems.
+                          Let's navigate the world of technology together,
+                          ensuring a smooth and secure digital experience.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div
-                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2
+                    className="rounded-full bg-primaryColor border-white border-4  w-7 h-7 md:w-10 md:h-10 absolute left-1/2
                   transform -translate-x-1/2 -translate-y-0 flex items-center justify-center"
                   >
                     <figure>

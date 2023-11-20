@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <header
       ref={headerRef}
-      className="w-full h-[80px] loading-[80px] flex items-center"
+      className="w-full h-[80px] loading-[80px] flex items-center nav"
     >
       <div className="container">
         <div className="flex items-center justify-between">
@@ -96,8 +96,8 @@ const Navbar = () => {
           {/* =============menu right=============== */}
           <div className="flex items-center gap-4">
             <button
-              className="flex items-center gap-2 text-smallTextColor font-[600] 
-              border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px]
+              className="flex items-center gap-2 text-smallTextColor font-[600] button__dis
+              border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[42px]
                hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300"
             >
               <i className="ri-send-plane-line"></i>Let's Talk

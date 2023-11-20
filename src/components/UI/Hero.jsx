@@ -3,6 +3,7 @@ import { hero2 } from "../../assets";
 import CountUp from "react-countup";
 
 const Hero = () => {
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -53,10 +54,12 @@ const Hero = () => {
               <span>
                 <i className="ri-apps-2-line"></i>
               </span>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-              deserunt dolorum dolore, molestiae, totam, rerum est voluptatibus
-              illo deleniti consequatur id accusamus iure incidunt. Adipisci
-              veritatis possimus cum dolore tempore.
+              I'm a skilled software developer with experience in Html, Css and
+              JavaScript, and expertise in frameworks like React.Js and
+              Three.js. I'm a quick learner and collaborate closely with clients
+              to create efficient, scalable, and user-friendly solutions that
+              solve real-world problems. Let's work together to bring your ideas
+              to life!
             </p>
 
             <div className="flex items-center gap-9 mt-14">
@@ -137,7 +140,7 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={100} duration={2} suffix="+" />
+                <CountUp start={0} end={30} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
                 Happy Clients
