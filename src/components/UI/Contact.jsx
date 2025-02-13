@@ -68,11 +68,11 @@ const Contact = () => {
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
               title="google map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.862294462641!2d3.402277275729493!3d6.539068622980685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d3bf476106f%3A0x9decceed9082c911!2s16%20Oloruntoyin%20St%2C%20Oworosoki%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1699990884768!5m2!1sen!2sng"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9499.174984395064!2d-2.3108579187825855!3d53.472146129155675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae69271125b9%3A0x8dbd826358a45b03!2sSalford%20M50%202TJ!5e0!3m2!1sen!2suk!4v1739461367356!5m2!1sen!2suk"
               className="border-0 w-full h-full"
-              allowFullScreen=""
+              allowfullscreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 

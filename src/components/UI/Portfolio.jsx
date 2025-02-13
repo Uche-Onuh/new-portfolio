@@ -128,7 +128,7 @@ const Portfolio = () => {
             </button>
           )}
 
-          {nextItems >= portfolios.length && data.length > 6 && (
+          {nextItems > 6  && (
             <button
               onClick={showLessHandler}
               className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4

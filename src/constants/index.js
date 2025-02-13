@@ -5,26 +5,47 @@ import {
   great,
   luxe,
   mel,
-  monie,
   mennsom,
   mytube,
   oge,
   osi,
+  syn,
+  greenl,
 } from "../assets";
 
 export const portfolios = [
   {
     id: "01",
-    imgUrl: monie,
+    imgUrl: syn,
     category: "E-commerce",
-    title: "Moniemove Platform",
+    title: "Synclexs Website",
     description:
-      "An efficient online platform that seamlessly connects clients seeking artisan services with skilled professionals. Prioritize UX, robust search algorithms, secure payment processing, and contract management.",
-    technologies: ["React", "Material UI", "Rest API"],
-    siteUrl: "https://www.moniemove.com/",
+      "Snyclexs is a platform that connects legal professionals with cutting-edge technology to streamline operations. It prioritizes user experience, robust transaction management, secure payment processing, and efficient contract handling.",
+    technologies: ["React", "Tailwind", "Redux", "Redux Toolkit", "Rest API"],
+    siteUrl: "https://synclexs.com/",
   },
   {
     id: "02",
+    imgUrl: greenl,
+    category: "Web Development",
+    title: "Greenlighthouse Website",
+    description:
+      "A platform for an educational institute for training kids in finances and investment. The platform provides a space for kids to learn about investment and also provides a space for parents to register their kids for the training.",
+    technologies: ["React", "Tailwind css", "Node.js"],
+    siteUrl: "https://greenlighthouse.co/",
+  },
+  {
+    id: "03",
+    imgUrl: mennsom,
+    category: "Web Development",
+    title: "Mennsom Website",
+    description:
+      "A platform for an energy company where they can showcase their products and services. The platform also provides a space for clients to contact the company for their services.",
+    technologies: ["React", "Tailwind css", "Node.js"],
+    siteUrl: "https://mennsom.com/",
+  },
+  {
+    id: "04",
     imgUrl: oge,
     category: "E-commerce",
     title: "Oge by Oge Website",
@@ -34,7 +55,7 @@ export const portfolios = [
     siteUrl: "https://ogebyoge.com.ng/",
   },
   {
-    id: "03",
+    id: "05",
     imgUrl: luxe,
     category: "Web Development",
     title: "Luxe Dental Website",
@@ -44,7 +65,7 @@ export const portfolios = [
     siteUrl: "https://luxedental.com.ng/",
   },
   {
-    id: "04",
+    id: "06",
     imgUrl: mel,
     category: "Web Development",
     title: "By Melaku Website",
@@ -53,19 +74,9 @@ export const portfolios = [
     technologies: ["Html5", "Bootstrap css", "PHP"],
     siteUrl: "https://bymelaku.com/",
   },
-  {
-    id: "05",
-    imgUrl: mennsom,
-    category: "Web Development",
-    title: "Mennsom Website",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: ["React", "Tailwind css", "Node.js"],
-    siteUrl: "https://mennsom.com/",
-  },
 
   {
-    id: "06",
+    id: "07",
     imgUrl: great,
     category: "Web Development",
     title: "Great Oak Website",
@@ -75,7 +86,7 @@ export const portfolios = [
     siteUrl: "https://greatoak.com.ng/",
   },
   {
-    id: "07",
+    id: "08",
     imgUrl: osi,
     category: "Web Development",
     title: "Cabbi Food Website",
@@ -85,7 +96,7 @@ export const portfolios = [
     siteUrl: "https://cabbifoods.osimheventures.com/",
   },
   {
-    id: "08",
+    id: "09",
     imgUrl: admin,
     category: "Web Development",
     title: "Admin Panel",
@@ -95,7 +106,7 @@ export const portfolios = [
     siteUrl: "https://capable-shortbread-5ab7f9.netlify.app/",
   },
   {
-    id: "09",
+    id: "10",
     imgUrl: mytube,
     category: "Web Development",
     title: "Mytube - A youtube clone",
@@ -105,7 +116,7 @@ export const portfolios = [
     siteUrl: "https://magnificent-fudge-aa19d1.netlify.app/",
   },
   {
-    id: "10",
+    id: "11",
     imgUrl: bank,
     category: "Web Development",
     title: "Bank Landing Page",
@@ -115,7 +126,7 @@ export const portfolios = [
     siteUrl: "https://soft-mermaid-ac7d10.netlify.app/",
   },
   {
-    id: "11",
+    id: "12",
     imgUrl: gpt3,
     category: "Web Development",
     title: "Landing Page",
